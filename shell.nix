@@ -2,8 +2,10 @@
 
 pkgs.mkShell {
     name = "LesNanoniBots";
+    allowUnfree = true;
     buildInputs = with pkgs; [
         git
+        jdk8
         boot
         nodejs
     ];
